@@ -1,0 +1,10 @@
+:title-page
+:elements
+	#.(let ((lib (ccl::find-pwgl-library :zosc)))  
+            (list :title (ccl::pwgl-library-name lib)
+                  :version (ccl::pwgl-library-version lib)
+                  :authors "josé henrique padovani"
+:link "http://zepadovani.info/etc.html"
+:protocol :http
+                  )
+)

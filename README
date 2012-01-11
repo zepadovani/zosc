@@ -1,0 +1,22 @@
+This is zosc 0.4, a OSC library for PWGL (http://www2.siba.fi/pwgl/)
+
+To install:
+
+Place all folders inside your PWGL-User directory (overwriting older ones if neccessary).
+in OSX it is in ~/PWGL-User/User-Library (i.e.: /Users/<your username>/PWGL-User)
+
+Open PWGL, load the zosc library (File/Load Library) and then go to Help/Pwgl Help. 
+In the pane Library Tutorials you will find some examples.
+(Pd-extended, Max/MSP, SuperCollider and Processing simple examples are included to test the library).
+
+Future versions will be reachable in these URLs: 
+https://github.com/zepadovani/zosc 
+http://zepadovani.info/etc.html
+
+zosc is based on OpenMusic osc implementation and is GPL licensed.
+
+Thanks to Mika Kuuskankare for the suggestions/corrections. 
+
+For more help write to the PWGL list. 
+If you have some nice example please share so that we can add it to the library tutorial.
+

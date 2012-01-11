@@ -1,0 +1,4 @@
+:title "notes"
+
+:bodytext "To test this lib you can open the osc_* files and test them with the respective tutorials/environments (Pd-extended, SuperCollider, Processing and Max/MSP)."
+

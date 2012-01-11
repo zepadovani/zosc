@@ -1,0 +1,26 @@
+#N canvas 285 117 700 338 10;
+#X declare -lib oscx;
+#X obj 4 7 comment 0 16 Helvetica patch 0 0 0 0 a patch to test OSC
+connection between PD-extended and PWGL (via zosc-0.4);
+#X obj 481 313 pddplink http://zepadovani.info;
+#X obj 415 71 comment 0 16 Helvetica patch 0 0 0 0 PD to PWGL;
+#X obj 39 71 comment 0 16 Helvetica patch 0 0 0 0 PWGL to PD;
+#X obj 403 261 sendOSC;
+#X msg 252 156 disconnect;
+#X obj 252 109 loadbang;
+#X floatatom 403 283 5 0 0 0 - - -;
+#X floatatom 442 283 5 0 0 0 - - -;
+#X text 477 282 bundleDepth;
+#X text 415 85 adapted from sendOSC help;
+#X obj 7 311 import oscx;
+#X obj 40 160 print;
+#X msg 403 112 send /pwgl/hello 1 1.2 string;
+#X obj 40 107 dumpOSC 9999;
+#X msg 252 137 connect localhost 10001;
+#X connect 4 0 7 0;
+#X connect 4 1 8 0;
+#X connect 5 0 4 0;
+#X connect 6 0 15 0;
+#X connect 13 0 4 0;
+#X connect 14 0 12 0;
+#X connect 15 0 4 0;
